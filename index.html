@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Improvement Quest Tracker</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<header>
+  <h1>🏆 Self-Improvement Quest <span class="level-name" id="levelName">Nível 1</span></h1>
+  <button id="resetBtn">Resetar Progresso</button>
+</header>
+
+<div class="container">
+
+  <!-- Estatísticas -->
+  <div class="stats">
+    <div>Level: <span id="level">1</span></div>
+    <div>XP: <span id="xp">0</span>/<span id="xpToNext">100</span></div>
+  </div>
+
+  <div id="progressBar"><div id="progress"></div></div>
+
+  <!-- Missões -->
+  <section>
+    <h2>Missões</h2>
+    <button id="showAddMission">+ Nova Missão</button>
+    <form id="addMissionForm">
+      <input type="text" id="mDesc" placeholder="Descrição" required>
+      <input type="color" id="mColor" value="#f39c12">
+      <select id="mDifficulty">
+        <option value="1">Fácil</option>
+        <option value="2">Médio</option>
+        <option value="3">Difícil</option>
+      </select>
+      <input type="number" id="mTime" placeholder="Tempo (min)" min="1" required>
+      <input type="number" id="mGoal" placeholder="Meta de vezes" min="1" required>
+      <input type="text" id="mReward" placeholder="Recompensa" required>
+      <input type="number" id="mBreak" placeholder="Descanso (min)" min="0" required>
+      <button type="submit">Salvar</button>
+    </form>
+    <ul class="mission-list" id="missions"></ul>
+  </section>
+
+  <!-- Histórico -->
+  <section>
+    <h2>Histórico</h2>
+    <table>
+      <thead><tr><th>Data</th><th>Missão</th><th>XP</th></tr></thead>
+      <tbody id="history"></tbody>
+    </table>
+  </section>
+
+</div>
+
+<!-- Overlay de Descanso -->
+<div id="breakOverlay">
+  Descanso: <span id="breakTimer">00:00</span>
+  <button id="cancelBreak">Cancelar</button>
+</div>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
+

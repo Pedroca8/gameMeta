@@ -1,0 +1,51 @@
+/* === Estilos Gerais === */
+body { font-family: 'Segoe UI', sans-serif; background: #121212; color: #e0e0e0; margin: 0; padding: 0; }
+header { background: #1f1f1f; padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #333; }
+header h1 { font-size: 1.8rem; display: flex; align-items: center; margin: 0; }
+header .level-name { font-style: italic; margin-left: .5rem; font-size: 1.2rem; }
+header button { background: #ff4c4c; border: none; padding: .5rem 1rem; border-radius: 6px; color: #fff; cursor: pointer; transition: background .3s; }
+header button:hover { background: #cc3b3b; }
+
+.container { max-width: 900px; margin: 2rem auto; padding: 1rem; }
+
+/* === Estatísticas === */
+.stats { display: flex; justify-content: space-between; margin-bottom: 1.5rem; }
+.stats div { background: #2a2a2a; padding: .7rem 1.2rem; border-radius: 10px; }
+
+#progressBar { background: #2a2a2a; border-radius: 10px; overflow: hidden; margin-bottom: 2rem; }
+#progress { background: #4caf50; height: 1rem; width: 0; transition: width .8s ease-in-out; }
+
+/* === Seções === */
+section { margin-bottom: 2rem; }
+h2 { margin-bottom: 1rem; font-size: 1.5rem; }
+
+/* === Missões === */
+.task-list, .mission-list { list-style: none; padding: 0; }
+.mission { background: #1e1e1e; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #f39c12; }
+.mission-header { display: flex; justify-content: space-between; align-items: center; }
+.mission-details { margin-top: .5rem; display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9rem; color: #ccc; }
+.progress-mission { background: #333; height: .8rem; border-radius: 4px; overflow: hidden; margin-top: .5rem; }
+.progress-bar-m { background: #f39c12; height: 100%; transition: width .5s ease; }
+
+/* === Botões de Missões === */
+button { cursor: pointer; }
+.completeM, .editM, .deleteM { background: #4caf50; color: #000; border: none; padding: .3rem .7rem; margin-left: .5rem; border-radius: 4px; transition: background .3s; }
+.editM { background: #f1c40f; }
+.deleteM { background: #e74c3c; color: #fff; }
+.completeM:hover { background: #45a049; }
+.editM:hover { background: #d4ac0d; }
+.deleteM:hover { background: #c0392b; }
+
+/* === Histórico === */
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { border: 1px solid #444; padding: .5rem; text-align: center; }
+th { background: #2a2a2a; }
+
+/* === Formulário de Nova Missão === */
+#addMissionForm { background: #1f1f1f; padding: 1rem; border-radius: 8px; margin-top: 1rem; display: none; }
+#addMissionForm input, #addMissionForm select, #addMissionForm button { margin-bottom: .5rem; padding: .5rem; width: 100%; border-radius: 6px; border: none; }
+#showAddMission { background: #3498db; border: none; padding: .5rem 1rem; border-radius: 6px; color: #fff; margin-bottom: 1rem; }
+
+/* === Overlay de Descanso === */
+#breakOverlay { position: fixed; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.9); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 2rem; display: none; }
+#breakOverlay button { margin-top: 1rem; background: #e74c3c; border: none; padding: .5rem 1rem; border-radius: 6px; color: #fff; }
