@@ -2,10 +2,10 @@
 const rankings = [
     { min: 1, name: 'Iniciante' },
     { min: 10, name: 'Aprendiz' },
-    { min: 20, name: 'Veterano' },
-    { min: 30, name: 'Especialista' },
-    { min: 40, name: 'Mestre' },
-    { min: 50, name: 'Lenda' }
+    { min: 30, name: 'Veterano' },
+    { min: 40, name: 'Especialista' },
+    { min: 60, name: 'Mestre' },
+    { min: 100, name: 'Lenda' }
   ];
   
   // ========== Estado Inicial ==========
